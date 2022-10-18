@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+/*NAV*/
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background: rgb(58, 69, 75);
+    height: 60px;
+    align-items: center;
+}
+
+a.blanco{
+   text-decoration: none;
+   color:white;
+
+     
+}
+a.gris{
+    text-decoration: none;
+    color: #979085;
+}
+a.verde{
+    text-decoration: none;
+    color: #299d41;
+    
+}
+
+li{
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px;
+    position: relative;
+    left: 100%;
+    
+}
+.navv{
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 10%;
+    top: 30%; 
+}
+
+/*TRES CAJAS*/
+.container{
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    justify-content: center;
+    left: 20%;
+}
+.container .uno{
+    width: 230px;
+    height: 200px;
+    border: solid 1.5px rgb(80, 80, 231);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.25s;
+    text-align: center;
+    line-height: 40px;
+}
+.container .uno:hover{
+    transform: translateY(-9px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container .dos{
+    width: 230px;
+    height: 200px;
+    border: solid 1.5px rgb(108, 108, 202);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.25s;
+    text-align: center;
+    line-height: 40px;
+}
+.container .dos:hover{
+    transform: translateY(-9px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .tres{
+    width: 230px;
+    height: 200px;
+    border: solid 1.5px rgb(250, 132, 21);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.25s;
+    text-align: center;
+    line-height: 40px;
+}
+.container .tres:hover{
+    transform: translateY(-9px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+p.doc{
+    color: rgb(111, 111, 111);
+    font-size: 14px;
+}
+
+/*FORMULARIO*/
+.titulo3{
+    color: black;
+    top: 60%;
+    font-size: 18px;
+    position: absolute;
+}
+.titulo4{
+    position: absolute;
+    color: black;
+    top: 65%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+#nombre{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    padding: 10px;
+}
+#apellido{
+    position: absolute;
+    top: 80%;
+    left: 50.5%;
+    padding: 10px;
+}
+#mail{
+    position: absolute;
+    top: 88%;
+    left: 20%;
+    padding: 10px;
+}
+
+.cant{
+    position: absolute;
+    top: 99%;
+    left: 20%;
+    font-size: 15px;
+    color: black;
+}
+.cat{
+    position: absolute;
+    top: 99%;
+    left: 51%;
+    font-size: 15px;
+    color: black;
+}
+
+#cantidad{
+    position: absolute;
+    top: 104%;
+    left: 20%;
+    padding: 10px;
+    width: 330px;
+   
+}
+#categoria{
+    position: absolute;
+    top: 104%;
+    left: 51%;
+    padding: 10px;
+    width: 350px;
+}
+
+
+.borrar{
+    position: absolute;
+    top: 130%;
+    background-color: #96c93e;
+    width: 28%;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 4px ;
+    left: 20%;
+    cursor: pointer;
+
+}
+.borrar:hover{
+    background-color: rgb(81, 131, 16);
+   
+}
+.borrar:active{
+    background-color: rgb(81, 131, 16);
+    transform: translateY(3px);
+}
+
+
+.resumen{
+    position: absolute;
+    top: 130%;
+    background-color: #96c93e;
+    width: 28%;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 4px ;
+    left: 50%;
+    cursor: pointer;
+}
+.resumen:hover{
+    background-color: rgb(81, 131, 16);
+    
+}
+.resumen:active{
+    background-color: rgb(81, 131, 16);
+    transform: translateY(3px);
+}
+
+#azul{
+    position: absolute;
+    top: 120%;
+    background-color: #b8d6f5;
+    width: 58%;
+    height: 40px;
+    border: none;
+    color: rgb(66, 66, 161);
+    border-radius: 4px ;
+    left: 20%;
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+
+/*PIE PAGINA*/
+footer{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 150%;
+    background: linear-gradient(to right, #1c3846, #1e516e);
+    height: 60px;
+    align-items: center;
+    
+}
+.pie{
+    position: abolute;
+    left: 30%;
+    
+}
+.foot{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 20px;
+    
+}
+.foot:hover{
+    color: rgb(190, 190, 190);
+}
